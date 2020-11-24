@@ -4,7 +4,7 @@
 
 ### Нацелено на платформу ```netcoreapp3.1```
 
-### [Скачать](https://github.com/sampletext-hw/Graphs/releases/download/1.0.0/Graphs.zip) готовое приложение
+### [Скачать](https://github.com/sampletext-hw/Graphs/releases/download/v1.0.0/Graphs.zip) готовое приложение
 
 ### Сборка
 * ```git clone https://github.com/sampletext-hw/Graphs.git```
