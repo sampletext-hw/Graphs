@@ -17,6 +17,8 @@ namespace Graphs
 
             Random random = new Random(DateTime.Now.Millisecond);
 
+            float sum = 0f;
+
             // текущее дерево графа
             List<Node> tree = new List<Node>();
 
@@ -43,6 +45,8 @@ namespace Graphs
                 var connection = connections.OrderBy(c => c.Length).First();
                 builder.AppendLine($"Ребро с минимальным весом {{{connection}}}");
 
+                sum += connection.Length;
+
                 // если дерево содержит 1 узел ребра, добавляем второе и наоборот
                 if (tree.Contains(connection.Node1))
                 {
@@ -55,6 +59,8 @@ namespace Graphs
                     builder.AppendLine($"Добавлен узел {connection.Node1}");
                 }
             }
+
+            builder.AppendLine($"Суммарный вес дерева - {sum}");
 
             return builder.ToString();
         }
