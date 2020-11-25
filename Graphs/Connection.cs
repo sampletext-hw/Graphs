@@ -54,7 +54,7 @@ namespace Graphs
 
         public override string ToString()
         {
-            return $"{Node1} - {Node2} [{Length}]";
+            return $"{{{Node1} - {Node2} [{Length}]}}";
         }
     }
 }
